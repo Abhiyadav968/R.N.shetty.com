@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    height: 120px;
+}
+
+.header-in {
+    width: 75%;
+    padding-left: 5%;
+    line-height: 150px;
+}
+
+.logo-link {
+    padding: 3px;
+    border-radius: 5px;
+    border: 3px solid black;
+}
+
+.header-inside {
+    line-height: 120px;
+}
+
+
+nav {
+    position: sticky;
+    width: 100%;
+    height: 65px;
+    background-color: rgb(48, 48, 179);
+}
+
+.navbar {
+    display: flex;
+    list-style: none;
+    line-height: 65px;
+}
+
+.link {
+    color: white;
+    font-size: 19px;
+    padding: 0 20px;
+}
+
+.navbar-link:hover {
+    transition: 1.5s;
+    background-color: rgb(47, 47, 129);
+}
+
+#check {
+    float: right;
+    display: none;
+}
+
+.checkbtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    display: none;
+    line-height: 65px;
+}
+
+.img-in {
+    width: 100%;
+    height: 500px;
+}
+
+h3 {
+    color: #80f;
+    font-size: 20px;
+}
+
+.body {
+    display: flex;
+    margin-top: 80px;
+}
+
+.body-in {
+    padding: 0 9%;
+}
+
+.flexbox {
+    display: flex;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    background-color: #EAF1F7;
+}
+
+.flexboxd-in {
+    padding: 0 3%;
+    display: block;
+}
+
+h2 {
+    color: #80f;
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.fas {
+    margin-bottom: 15px;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-color: blue;
+}
+
+.footer-paira {
+    color: white;
+    font-size: 20px;
+    line-height: 150px;
+}
+
+.footer-in {
+    color: white;
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+/* courses-style */
+
+
+.center {
+    color: #80f;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.courses {
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 0 9%;
+}
+
+.down-inside {
+    color: black;
+    margin-left: 120px;
+    /* font-size: 30px; */
+}
+
+.li {
+    font-size: 20px;
+    margin-left: 180px;
+}
+
+/* gallery-style */
+
+.gallery-in {
+    width: 100%;
+    display: flex;
+}
+
+.gallery-img {
+    width: 33%;
+    height: 200px;
+    padding: 0.3%;
+}
+
+/* Contact-style */
+
+.contact-h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact {
+    display: flex;
+    margin-top: 80px;
+}
+
+.form {
+    font-size: 35px;
+    color: #006489;
+}
+
+.font {
+    font-size: 20px;
+}
+
+.contact-in {
+    padding-left: 10%;
+}
+
+.outline {
+    width: 100%;
+    height: 40px;
+    text-indent: 10px;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+#Message {
+    border-radius: 20px;
+    text-indent: 20px;
+    font-size: 20px;
+}
+
+#Message:focus {
+    outline: rgb(28, 216, 216) solid 3px;
+}
+
+.outline:focus {
+    outline: rgb(28, 216, 216) solid 3px;
+}
+
+.Sub {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    text-indent: 10px;
+    transition: 0.5s;
+    border-radius: 20px;
+    background-color: #0062cc;
+}
+
+.contact-paira {
+    font-size: 20px;
+    padding-right: 30%;
+}
+
+@media (max-width:990px) {
+
+    .img-in {
+        width: 100%;
+        height: 303px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .header-in {
+        text-align: center;
+        padding-left: 12%;
+    }
+
+    .header-inside {
+        margin-top: -110px;
+        text-align: center;
+    }
+
+    .checkbtn {
+        display: block;
+        padding-right: 40%;
+        margin-right: 20px;
+    }
+
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+
+    .nav {
+        top: 65px;
+        left: -100%;
+        width: 100%;
+        transition: 1s;
+        position: fixed;
+        display: block;
+        background-color: rgb(27, 27, 107);
+    }
+
+    #check:checked~.nav {
+        left: 0%;
+    }
+
+    .body {
+        display: block;
+        text-align: center;
+    }
+
+    .flexbox {
+        display: block;
+        padding-left: 7%;
+        /* text-align: center; */
+    }
+
+    .courses-down {
+        margin-left: -98px
+    }
+
+    .gallery-in {
+        display: block;
+        width: 100%;
+    }
+
+    .gallery-img {
+        width: 100%;
+    }
+
+    /* .contact-h1 {
+        display: none;
+    } */
+
+    .contact {
+        display: block;
+    }
+
+    .form {
+        text-align: center;
+    }
+
+    .contact-in {
+        width: 85%;
+        padding-left: 5%;
+    }
+
+    .contact-paira {
+        padding-left: 7%;
+    }
+
+    #Message {
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+        height: 300px;
+        padding-left: 5%;
+    }
+
+}
