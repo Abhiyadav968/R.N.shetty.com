@@ -312,21 +312,29 @@ h2 {
 
     .navbar {
         display: block;
-        text-align: center;
+        text-align: center;   
+    }
+
+    .navbar-link {
+        border-bottom: 1px solid black;
+    }
+    
+    .navbar-link:hover {
+        background-color: rgba(0, 0, 255, 0.437);
     }
 
     .nav {
         top: 185px;
-        left: -100%;
+        top: -100%;
         width: 100%;
         transition: 1s;
         position: fixed;
         display: block;
-        background-color: rgb(27, 27, 107);
+        background-color: rgb(12, 12, 138);
     }
 
     #check:checked~.nav {
-        left: 0%;
+        top: 185px;
     }
 
     .body {
